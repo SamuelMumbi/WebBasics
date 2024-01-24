@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backgroundVideo</title>
+</head>
+<style>
+  #hero {
+    height: 90vh;
+    color: white;
+    position: relative;
+    }
+    
+    #hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 21, 37, .8);
+    z-index: -1;
+    }
+    video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -2;
+    }
+</style>
+<body>
+  <video  width="640" height="360" controls autoplay loop>
+      <!-- Adds play, pause, and volume controls. -->
+    <source src="video-file.mp4" type="video/mp4">
+    <source src="video-file.mp4" type="video/webm">
+  </video>
+</body>
+</html>

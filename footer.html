@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Footer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+        height: 100vh;
+    }
+    
+    .app-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(19, 23, 25, 1);
+        color: #ffffff4d;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        gap: 8px;
+    }
+    
+    .subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subscribe-form {
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        margin: -30px 0 10px 0;
+        background: #fff;
+        box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+    
+    .email_input {
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 250px;
+        font-weight: 500;
+        padding: 0 8px 0 16px;
+        height: 50px;
+        font-size: 14px;
+        box-shadow: none;
+    }
+    
+    .btn_submit {
+        color: #fff;
+        background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+        height: 50px;
+        padding: 0 16px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        letter-spacing: 1;
+        text-transform: uppercase;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 16px 0;
+        width: 100%;
+    }
+    
+    .app-info {
+        width: 30%;
+    }
+    
+    .app-info h2 {
+        color: #fff;
+    }
+    .app-info p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    
+    .footer-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .action-header {
+        color: #fff;
+    }
+    
+    .unordered-list {
+        list-style: none;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    
+    .unordered-list li {
+        margin-bottom: 8px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.3);
+    }
+    
+    a:hover {
+        color: #63a9fe;
+        transition: 0.2s ease-in all;
+    }
+    
+    .social-icons img {
+        width: 20px;
+        margin-right: 16px;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+    
+    .copyright {
+        font-size: 14px;
+        margin: 4px 0 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <footer class="app-footer">
+        <div class="container">
+            <div class="subscribe">
+                <form action="" class="subscribe-form">
+                    <input type="email" class="email_input" placeholder="Enter email adress">
+                    <button type="submit" class="btn_submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-content">
+                <div class="app-info">
+                    <h2>Web Component</h2>
+                    <p>You can add your brand tagline here or you can add any sub headline here.</p>
+                </div>
+                <div class="footer-actions">
+                    <div class="services-actions">
+                        <h2 class="action-header">Services</h2>
+                        <ul class="unordered-list">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2</a></li>
+                            <li><a href="#">Service 3</a></li>
+                            <li><a href="#">Service 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="about-actions">
+                        <h2 class="action-header">Services</h2>
+                        <ul class="unordered-list">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Compliances</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <img src="/facebook.png" alt="fb-icon">
+                <img src="/instagram.png" alt="insta-icon">
+                <img src="/twitter.png" alt="twitter-icon">
+                <img src="/youtube.png" alt="yt-icon">
+            </div>
+            <div class="copyright">
+                <p class="copyright-text">
+                    &copy; 2023 All roghts reserved | 
+                    <a href="#">Web Component</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

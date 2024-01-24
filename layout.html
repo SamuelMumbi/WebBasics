@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndirangu.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 1. Styling the home page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: poppins, sans-serif;
+  line-height: 1.5rem !important;
+}
+/* 2. Styling the body */
+.body{
+  background:whitesmoke;
+}
+/* 3. Styling the nav */
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1876f2;
+  padding: 5px 5%;
+}
+/* 4. styling the logo.....*/
+.logo img{
+  margin:right 45px;
+  width:160px; 
+}
+/* 5. designing  nav-left .....*/
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+
+/* 6. styling ul li .....*/
+.nav-left ul li{
+  list-style: none;
+  display: inline-block;
+  margin:5px;
+}
+
+/* 7. styling nav-right .....*/
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+.nav-user-icon{
+  margin-left: 30px;
+  width:40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-box{
+  background: whitesmoke;
+  width:350px;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  padding: 0  15px;
+}
+.search-box input{
+  width:100%;
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border:0;
+}
+.search-box img{
+  width:18px;
+}
+.nav-user-icon{
+  margin-left: 30px;
+  width:40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 8. styling nav-main .....*/
+.nav-main{
+  display:flex;
+  justify-content: space-between; 
+}
+
+.main-links a{
+  background-color: whitesmoke;
+  flex:1 ;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.main-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin:5px;
+}
+/* 9. styling the brand .....*/
+.brand{
+  display: flex;
+  background-color: #000080;
+  justify-content: center;
+  padding-top:15px;
+  padding-bottom: 1px;
+}
+.brand p{
+  color:#fff;
+  size: 20px;
+}
+/* 10. styling the container .....*/
+.container{
+  display:flex;
+  justify-content: space-between;
+  padding:13px 5%; 
+}
+
+.left-sidebar{
+  background: #cbdffa;
+  flex-basis:25%;
+  position:sticky;
+  top:70px;
+  align-self:self-start;
+  height:75vh;
+}
+
+.main-content{
+  background:#C0C0C0;
+  flex-basis:47%;
+}
+
+.right-sidebar{
+  background: #cbdffa;
+  flex-basis:25%;
+  position:sticky;
+  top:70px;
+  align-self:self-start;
+  height:75vh;
+}
+
+/* 11. styling the footer .....*/
+.footer{
+  display: flex;
+  background-color: #000080;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer img{
+  align-items: center;
+  margin:right 45px;
+  width:160px;  
+}
+.footer p{
+  color:#fff;
+  size: 20px;
+  justify-content: center;
+}
+
+    </style>
+  </head> 
+  <body>
+<!-------------------nav-bar----------------------------------------------------------------> 
+    <nav class="nav">
+<!-------------------nav-left---------------------------------------------------------------> 
+      <div class="nav-left">
+        <div class="logo">
+          <img src="images/Samuel Mumbi.jpg" alt="">
+        </div>
+        <div class="img">
+          <ul> 
+            <li><img src="images/notification.png" alt=""></li>
+            <li><img src="images/inbox.png" alt=""></li>
+            <li><img src="images/video.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+<!-------------------nav-main--------------------------------------------------------------->       
+      <div class="nav-main">
+        <div class="main-links">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Incubator">Incubator</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Careers">Careers</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+          </ul> 
+        </div>
+
+      </div>
+<!-------------------nav-right-------------------------------------------------------------->      
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="">
+          <input type="text" placeholder="search">
+        </div>
+        <div class="nav-user-icon">
+          <img src="images/feeling.png" alt="">
+        </div>
+      </div>
+    </nav>
+<!-------------------brand----------------------------------------------------------------> 
+    <section class="brand">
+      <div>
+        <p> Samylan digital star enterprices is
+          "The leading Tech company in modern web technologies"
+        </p>
+      </div>
+    </section>
+<!-------------------container-------------------------------------------------------------> 
+    <section class="container">
+      <div class="left-sidebar"></div>
+      <div class="main-sidebar"></div>
+      <div class="right-sidebar"></div>
+    </section>
+<!-------------------footer----------------------------------------------------------------> 
+    <section  class="footer" >
+          <footer>
+            <div>
+              <p>We are located  in Malindi ,Along Nyerere Rd,Opposite Simba Dishes,   Website: www.https://ndirangu.com  Email:info@ndirangu.com  Tel:+254(0)0100458042, copyrite december 2023 </p>
+            </div>
+          </footer>
+      </section>
+  </body>
+</html>

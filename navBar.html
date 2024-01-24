@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>navBar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        background: url('/bg.png') center no-repeat;
+        height: 100%;
+        background-size: cover;
+    }
+    
+    .header {
+        height: 5rem;
+        display: flex;
+        background: linear-gradient(45deg, #0000004a, transparent);
+    }
+    
+    nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        color: #fff;
+        margin: auto;
+    }
+    
+    .left-section img {
+        width: 5rem;
+        cursor: pointer;
+    }
+    
+    .right-section {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        list-style: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .btn-login {
+        background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+    
+    a:hover {
+        color: #00bfff;
+    }
+    
+    a::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+        height: 1px;
+        transition: all 0.3s;
+    }
+    
+    a:hover::before {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="left-section">
+                    <img src="/logo.png" alt="logo">
+                    <!-- <h1>Logo</h1> -->
+                </div>
+                <div class="right-section">
+                    <ul class="nav-links">
+                        <li class="nav-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="action">
+                        <button class="btn-login">Login</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
